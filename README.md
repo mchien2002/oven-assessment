@@ -42,6 +42,7 @@ Dự án áp dụng mô hình **Service Layer**:
 │ │ ├── views/ # View xử lý request/response  
 │ │ └── urls.py  
 ├── libs/ # Common libs: responses, logger, decorators , hashmap
+
 ├── djangoapp/ # Core settings, urls, wsgi  
 ├── docker/ # Docker configs  
 └── manage.py
@@ -114,28 +115,21 @@ Schema sản phẩm ví dụ:
 Ví dụ output:
 
 ```json
-"attachments": {
-      "product_id": {
-        "images": {
-          "img_1.jpg": {
-            "size": 1829268,
-            "type": "image/jpeg"
-          }
-        },
-        "pdf": {
-          "pdf_1.pdf": {
-            "size": 110629,
-            "type": "application/pdf"
+{
+    "storage": {
+      "products": {
+        "product_id": {
+          "images": {
+            "image_1.png": {
+              "size": 1358373,
+              "type": "image/png"
+            }
           },
-          "pdf_2.pdf": {
-            "size": 110629,
-            "type": "application/pdf"
-          }
-        },
-        "media": {
-          "video.mp4": {
-            "size": 41879884,
-            "type": "video/mp4"
+          "icons": {
+            "icon_1.svg": {
+              "size": 2826452,
+              "type": "image/svg+xml"
+            }
           }
         }
       }
