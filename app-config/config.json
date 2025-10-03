@@ -1,0 +1,13 @@
+{
+  "service_name": "TEST-API",
+  "postgres_db": {
+    "db": {
+      "NAME": "db",
+      "USER": "admin",
+      "PASSWORD": "admin",
+      "HOST": "localhost",
+      "PORT": 5432
+    },
+    "mysql_db": {}
+  }
+}
