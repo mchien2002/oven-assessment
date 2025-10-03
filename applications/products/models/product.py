@@ -11,7 +11,7 @@ from libs.ultils import delete_old_image
 class Product(BaseModel):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True)
-    price = models.IntegerField(
+    price = models.FloatField(
         validators=[MinValueValidator(1000)]
     )
     image_url = models.ImageField(upload_to="images/", blank=True)

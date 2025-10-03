@@ -229,6 +229,8 @@ pytest
 -   Hashmap metadata mới chỉ lưu trong bộ nhớ (chưa persist vào DB).
     
 -   Authentication chưa triển khai (ngoài phạm vi yêu cầu).
+
+-   Thời gian chưa đủ để define nhiều test case trong quá trình chạy chương trình.
     
 
 ----------

@@ -6,14 +6,14 @@ from applications.products.models.product import Product
 class ProductCreateSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=100)
     description = serializers.CharField(required=False, allow_null=True, allow_blank=True)
-    price = serializers.IntegerField(min_value=1000)
+    price = serializers.FloatField(min_value=1000)
     is_active = serializers.BooleanField(default=True)
 
 
 class ProductUpdateSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=100, required=False)
     description = serializers.CharField(required=False, allow_null=True, allow_blank=True)
-    price = serializers.IntegerField(min_value=1000, required=False)
+    price = serializers.FloatField(min_value=1000, required=False)
     is_active = serializers.BooleanField(default=True, required=False)
 
 
